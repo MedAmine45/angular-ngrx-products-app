@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Computer",
+      "price": 4300,
+      "quantity": 600,
+      "selected": true,
+      "available": true
+    },
+    {
+      "id": 2,
+      "name": "Printer",
+      "price": 4300,
+      "quantity": 100,
+      "selected": false,
+      "available": false
+    },
+    {
+      "id": 3,
+      "name": "Smartphone",
+      "price": 124500,
+      "quantity": 100,
+      "selected": true,
+      "available": true
+    },
+    {
+      "id": 4,
+      "name": "imprimante",
+      "price": 800,
+      "quantity": 555,
+      "selected": true,
+      "available": false
+    },
+    {
+      "name": "dsds",
+      "price": 0,
+      "quantity": 0,
+      "selected": true,
+      "available": true,
+      "id": 5
+    }
+  ]
+}
