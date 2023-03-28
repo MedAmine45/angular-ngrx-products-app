@@ -12,7 +12,7 @@ export class ProductsService {
   constructor(private http: HttpClient) { }
 
   getAllProducts() : Observable<Product[]>{
-   // let host = (Math.random()>0.1) ? environment.host : environment.unreachableHost;
+    //let host = (Math.random()>0.6) ? environment.host : environment.unreachableHost;
    let host = environment.host;
     return this.http.get<Product[]>(host+"/products");
   }
@@ -29,10 +29,10 @@ export class ProductsService {
       let host = environment.host;
       return this.http.get<Product[]>(host+"/products?name_like="+keyword);
     }
-    select(product:Product) : Observable<Product>{
+    setSelected(product:Product) : Observable<Product>{
       let host = environment.host;
-      product.selected = !product.selected;
-      return this.http.put<Product>(host+"/products/"+product.id,product);
+     // product.selected = !product.selected;
+      return this.http.put<Product>(host+"/products/"+product.id,{...product ,selected:!product.selected });
     }
     deleteProduct(product:Product) : Observable<void>{
       let host = environment.host;
